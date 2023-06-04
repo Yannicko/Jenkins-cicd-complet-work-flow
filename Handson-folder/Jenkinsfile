@@ -6,15 +6,6 @@ pipeline{
         stage("A"){
             steps{
                 echo "========executing A========"
-                aws configure
-                sh 'pwd'
-                sh 'ls'
-                docker build -t muy_first_image LLLLLLLL
-                kubectl create -f LLLLLLLLL.yml
-                kubectl apply -f kaslfajsdklfsaj.yml
-                terraform init 
-                terraform plan
-                terraform apply
             }
             post{
                 always{

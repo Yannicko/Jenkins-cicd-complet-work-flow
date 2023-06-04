@@ -6,9 +6,9 @@ def COLOR_MAP = [
 pipeline {
     agent any
 
-    // tools {
-    //     terraform 'Terraform'
-    // }
+     tools {
+         terraform 'Terraform'
+     }
 
     environment {
         //Credentials for Prod environment
@@ -19,7 +19,7 @@ pipeline {
         stage('Git checkout') {
             steps {
                 echo 'Cloning project codebase...'
-                git branch: 'main', url: 'https://github.com/Michaelgwei86/effulgencetech-devops-fully-automated-infra.git'
+                git branch: 'main', url: 'https://github.com/Yannicko/Jenkins-cicd-complet-work-flow.git'
                 sh 'ls'
                 sh 'pwd'
             }
